@@ -1,0 +1,399 @@
+*{
+    padding: 0px;
+    margin:  0px;
+    box-sizing: border-box;
+    
+}
+
+.clear{
+    overflow: hidden;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    
+    scroll-behavior: smooth;
+}
+
+.text-white{
+    color: #fff !important;
+}
+
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-half{
+    width: 50%;
+}
+
+.col-third{
+    width: 33.3333%;
+}
+
+.col-full{
+    width: 100%;
+}
+
+
+
+#main{
+
+}
+
+#header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: black;
+    background-size: 46px;
+    height: 46px;
+    z-index: 1;
+}
+
+#navigation{
+    display: inline-block;
+}
+
+#navigation, .subnavigation{
+list-style-type: none;
+}
+
+#navigation, #navigation li, #navigation li a{
+    height: 100%;
+}
+
+#navigation > li{
+    display: inline-block;  
+}
+
+#navigation li{
+  
+}
+
+#navigation > li > a{
+    color: white;
+    text-transform: uppercase;
+}
+
+#navigation li a{
+    height: 46px;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 12px 24px;
+}
+
+#navigation li:hover, #navigation li a:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+#navigation .navigation-arrow-down{
+    font-size: 14px;
+}
+
+#header #navigation .subnavigation{
+    display: block;
+    position: absolute;
+    background-color: white;
+
+}
+
+ .subnavigation li, .subnavigation li {
+    color: #000;
+    display: block;
+    padding: 0 12px;
+    background-color: white;
+    display: none;
+}
+
+.subnavigation li a{
+    color: #000;
+    padding: 0 0px;
+}
+
+#navigation li:hover .subnavigation li, #navigation li .subnavigation li:hover {
+    display: block;
+    color: #000;
+}
+
+#header .search-btn, .menu-btn{
+    display: inline-block;
+    color: white;
+    float: right;
+    line-height: 46px;
+    padding:-0 23px;
+}
+
+#header .search-btn:hover{
+    background-color:#f44336;
+    cursor: pointer;
+}
+
+#header .menu-btn:hover{
+    background-color:#f5f5f593;
+    cursor: pointer;
+}
+
+.menu-btn{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: none;
+}
+
+
+#slider{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('../image/chicago.jpg') top center / cover no-repeat ;
+}
+
+#slider .text-content{
+    color: white;
+    position: absolute;
+    bottom:47px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#slider .text-header{
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#slider .text-description{
+    font-size: 15px;
+    margin-top: 25px;
+    text-shadow: 1px 1px #000;
+}
+
+
+#content{
+    height: 100%
+}
+
+#content .content-section{
+    width: 800px;
+    max-width: 100%;
+    padding: 64px 16px;
+    border: auto;
+    margin: auto;
+}
+
+#content .content-section-heading{
+    margin: 10px 0;
+    text-align: center;
+    font-weight: 500;
+}
+
+#content .content-section-subheading{
+    margin: 15px 0px;
+    text-align: center;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .content-section-description{
+    margin: 15px 0px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+#content .member-list{
+    margin-top: 48px;
+    text-align: center;
+    overflow: hidden;
+    
+}
+
+#content .member-item{
+   
+}
+
+#content .member-name{
+    text-align: center;
+    font-size: 15px;
+}
+
+#content .member-img{
+    width: 154px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+/* tour date */
+.tour-section{
+    background-color: black;
+}
+
+.tickets-list{
+    background-color: #fff;
+    margin-top: 30px;
+    list-style-type: none;
+}
+
+.tickets-list li{
+    color: #757575;
+    font-size: 15px;
+    padding: 16px 11px;
+    border-bottom: 1px solid #ddd;
+    list-style-type: none;
+}
+.tickets-list li .sold-out{
+    color: #fff;
+    background-color: #f44336;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+
+.tickets-list li .quantity{
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: black;
+    color: #fff;
+    border-radius: 50%;
+    line-height: 24px;
+    text-align: center;
+}
+
+.place-list{
+    margin-top: 16px;
+    padding-bottom: 47px;
+}
+
+.place-list .place-item .place-image{
+    width: 100%;
+    display: block;
+}
+
+.place-list .place-item .place-image:hover{
+    opacity: 0.6;
+}
+
+.place-list .place-item{
+    float: left;
+    width: 33.33333%;
+    margin-top: 16px;
+    padding: 0 8px;
+}
+
+.place-list .place-item .place-body{
+    background-color: #fff;
+    padding: 16px;
+}
+
+.place-hea{
+    margin: 15px 0;
+}
+
+.place-time{
+    margin: 15px 0;
+}
+
+.place-des{
+    margin: 15px 0;
+}
+
+.place-buy-btn{
+    color: #fff;
+    background-color: black;
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+}
+
+.place-buy-btn:hover{
+    color:black;
+    background-color: rgb(133, 133, 133);
+}
+
+/* contact from */
+.contact-content{
+    margin-top: 48px;
+}
+
+.contact-info{
+    font-size: 18px;
+}
+
+.contact-info i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-item{
+margin-top: 8px;
+}
+
+.contact-form{
+    font-size: 15px;
+}
+
+.contact-form .row{
+    margin-bottom: 8px;
+}
+
+.contact-form .form-control{
+    padding: 11px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.contact-button{
+    float: right;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 8px 16px;
+    color: #fff;
+    background-color: black;
+    border: none;
+    -webkit-appearance: none;
+}
+
+/* map */
+#map{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/assets/image/places/map.jpg') top center / cover no-repeat ;
+}
+
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+}
+
+.socials-list{
+    font-size: 24px;
+}
+.socials-list a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.socials-list a:hover{
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.script{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.script a{
+    color: rgba(0, 0, 0, 0.6);
+}
